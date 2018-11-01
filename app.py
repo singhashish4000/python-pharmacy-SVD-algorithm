@@ -13,14 +13,13 @@ app = Flask(__name__)
 
 # Config MySQL
 app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '123456'
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'pharmacy_ml'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 # init MYSQL
 mysql = MySQL(app)
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyAAMYyl9sUo5_CTgsFNJWFicM0P2XHScWM"
-GoogleMaps(app, key="AIzaSyAAMYyl9sUo5_CTgsFNJWFicM0P2XHScWM")
+app.config['GOOGLEMAPS_KEY'] = "")
 #Articles = Articles()
 
 # Index
