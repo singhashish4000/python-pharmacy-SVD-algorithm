@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+            {{"decoupled-map"|googlemap_js(37.4419, -122.1419, markers=[(37.4419, -122.1419)])}}
+            {{mymap.js}}
+            {{sndmap.js}}
+            <title>Pharmacy ML</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        {% include 'includes/_navbar.html' %}
+        <div class="container">
+          {% include 'includes/_messages.html' %}
+
+          <h1>Dashboard <small> Welcome {{session.username}}</small></h1>
+
+          <p>Your Current Location :</p>
+   
+          {{"decoupled-map"|googlemap_html(37.4419, -122.1419)}}
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+        <!-- <a class="btn btn-success" href="/add_article"> Add Article</a> -->
+        <br><h3>Doctor Recomendation based on your filter's</h3>
+        <table class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Qualification</th>
+            <th>Address</th>
+            <th>Fees</th>
+            <th>Review</th>
+            <th></th>
+          </tr>
+            <tr>
+              <td style="color:black">Demo Name</td>
+              <td>Demo Qualification</td>
+              <td>Demo Address</td>
+              <td>Demo Fees</td>
+              <td>Demo Review</td>
+            </tr>
+            <tr>
+                <td style="color:black">Demo Name</td>
+                <td>Demo Qualification</td>
+                <td>Demo Address</td>
+                <td>Demo Fees</td>
+                <td>Demo Review</td>
+              </tr>
+              <tr>
+                <td style="color:black">Demo Name</td>
+                <td>Demo Qualification</td>
+                <td>Demo Address</td>
+                <td>Demo Fees</td>
+                <td>Demo Review</td>
+              </tr>
+              <tr>
+                  <td style="color:black">Demo Name</td>
+                  <td>Demo Qualification</td>
+                  <td>Demo Address</td>
+                  <td>Demo Fees</td>
+                  <td>Demo Review</td>
+                </tr>    
+        </table>
+
+      </div>
+    </body>
+</html>
+
